@@ -9,10 +9,10 @@ module.exports = {
     extend: {
       container: {
         center: true,
-        padding: "24px ",
       },
       colors: {
         Neutral_White: "#FFF",
+        Natural_Orange: "#E5361D",
       },
     },
   },

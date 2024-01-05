@@ -1,34 +1,32 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import { IoIosArrowDropdown } from "react-icons/io";
 
 import close from "../assets/close.svg";
-import drop_down from "../assets/drop-down.svg";
 import menu from "../assets/menu.svg";
 import logo from "../assets/logo.svg";
 import { navLinks } from "../constants";
 import Link from "next/link";
-import Button from "./Button";
-import Services from "@/components/Services";
 
-const Navbar = () => {
-  const [active, setActive] = useState("/");
+const Test = () => {
+  const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className=" w-full flex  justify-between items-center container px-[24px]  py-[26px] bg-orange-200 ">
-      <Link href={"/"}>
-        <Image src={logo} alt="logo" />
+    <nav className=" w-full flex py-6 justify-between items-center container ">
+      <Link href={"home"}>
+        <Image src={logo} alt="logo" className="w-[124px] h-[32px]" />
       </Link>
 
-      <ul className="list-none md:flex hidden items-center  ">
+      <ul className="list-none md:flex hidden  ">
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
             className={` font-normal cursor-pointer text-[16px] ${
-              active === nav.title ? "text-Natural_Orange" : "text-black"
-            } ${index === navLinks.length - 1 ? "mr-0" : "mr-[16px]"}`}
+              active === nav.title ? "text-[#4285F4]" : "text-black"
+            } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
             onClick={() => setActive(nav.title)}
           >
             {nav.title ? (
@@ -38,32 +36,64 @@ const Navbar = () => {
                 <div className="flex items-center gap-2 justify-between relative ">
                   <div>
                     {" "}
-                    <Link href={"services"}> Services</Link>
+                    <Link href={"services"}> SERVICES</Link>
                   </div>
                   <div onClick={() => setOpen(!open)}>
-                    <Image src={drop_down} alt="drop_down" />
+                    <IoIosArrowDropdown />
                   </div>
                 </div>
 
-                <div
-                  className={`absolute top-[80px]  bg-white  rounded-lg  w-[904px] h-[497px]   ${
+                <ul
+                  className={`absolute top-[45px] bg-white  h-fit  w-[120px]   ${
                     open ? " flex text-black" : "hidden"
                   } `}
                 >
-                  <Services />
-                </div>
+                  <li
+                    className={`flex font-medium  text-[16px] leading-[20.6px]    px-[8px] py-[16px]   flex-col  `}
+                  >
+                    <Link
+                      className="hover:bg-blue-600 hover:text-white mb-2"
+                      href={"home"}
+                    >
+                      Offshore Team
+                    </Link>
+                    <Link
+                      className="hover:bg-blue-600 hover:text-white mb-2 "
+                      href={"home"}
+                    >
+                      Software Development
+                    </Link>
+                    <Link
+                      className="hover:bg-blue-600 hover:text-white mb-2 "
+                      href={"home"}
+                    >
+                      Design & Development
+                    </Link>
+                    <Link
+                      className="hover:bg-blue-600 hover:text-white mb-2"
+                      href={"home"}
+                    >
+                      Mobile Application
+                    </Link>
+                    <Link
+                      className="hover:bg-blue-600 hover:text-white mb-2 "
+                      href={"home"}
+                    >
+                      DevOps
+                    </Link>
+                    <Link
+                      className="hover:bg-blue-600 hover:text-white "
+                      href={"home"}
+                    >
+                      Digital Marketing
+                    </Link>
+                  </li>
+                </ul>
               </div>
             )}
           </li>
         ))}
       </ul>
-      <div className="ml-[16px] md:flex hidden   ">
-        {" "}
-        <Link href={"/"}>
-          {" "}
-          <Button />
-        </Link>
-      </div>
 
       <div
         className="md:hidden flex justify-between items-center 
@@ -101,7 +131,7 @@ const Navbar = () => {
                   key={nav.id}
                   className={`  font-semibold cursor-pointer text-[16px] leading-[50px] text  m_title lowercase ${
                     active === nav.title ? "text-[#4285F4]" : "text-black"
-                  } ${index === navLinks.length - 1 ? "mr-0" : "mr-[16px]"}`}
+                  } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
                   onClick={() => setActive(nav.title)}
                 >
                   {nav.title ? (
@@ -116,7 +146,7 @@ const Navbar = () => {
                           <Link href={"services"}> SERVICES</Link>
                         </div>
                         <div onClick={() => setOpen(!open)}>
-                          <Image src={drop_down} alt="drop_down" />
+                          <IoIosArrowDropdown />
                         </div>
                       </div>
 
@@ -178,4 +208,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Tesa;
