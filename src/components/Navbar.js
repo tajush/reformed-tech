@@ -17,7 +17,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className=" w-full flex  justify-between items-center container px-[24px]  py-[26px] bg-orange-200 ">
+    <nav className=" w-full flex  justify-between items-center container px-[24px]  py-[26px] nav-bg ">
       <Link href={"/"}>
         <Image src={logo} alt="logo" />
       </Link>
@@ -46,7 +46,7 @@ const Navbar = () => {
                 </div>
 
                 <div
-                  className={`absolute top-[80px]  bg-white  rounded-lg  w-[904px] h-[497px]   ${
+                  className={`absolute left-[50%] -translate-x-[50%]  top-[80px]  bg-white  rounded-lg   h-[497px]   ${
                     open ? " flex text-black" : "hidden"
                   } `}
                 >

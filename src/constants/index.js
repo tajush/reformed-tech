@@ -6,6 +6,13 @@ import service5 from "@/assets/service5.svg";
 import service6 from "@/assets/service6.svg";
 import service7 from "@/assets/service7.svg";
 import service8 from "@/assets/service8.svg";
+import solution1 from "@/assets/solution1.svg";
+import solution2 from "@/assets/solution2.svg";
+import solution3 from "@/assets/solution3.svg";
+import solution4 from "@/assets/solution4.svg";
+import solution5 from "@/assets/solution5.svg";
+import solution6 from "@/assets/solution6.svg";
+import frame from "@/assets/frame.svg";
 
 export const navLinks = [
   {
@@ -77,5 +84,55 @@ export const card_right = [
     title: "QA & Testing",
 
     icon: service8,
+  },
+];
+
+export const solutions = [
+  {
+    title: "Website Development",
+
+    content:
+      "High-performing websites that engage and impress with our custom design.",
+    icon: solution1,
+    frame: frame,
+  },
+  {
+    title: "Offshore Team",
+
+    content:
+      " Global Developer Provider for Cross-Border IT and Engineering Organizations.",
+    icon: solution2,
+    frame: frame,
+  },
+  {
+    title: "Mobile App Development",
+
+    content:
+      "Top-tier mobile application development to turn your ideas into reality.",
+    icon: solution3,
+    frame: frame,
+  },
+  {
+    title: "UI/UX Design",
+
+    content: "Delight end users with intuitive and engaging user interfaces.",
+    icon: solution4,
+    frame: frame,
+  },
+  {
+    title: "QA & Testing",
+
+    content:
+      "Make your technology bulletproof, with manual and automated testing.",
+    icon: solution5,
+    frame: frame,
+  },
+  {
+    title: "DevOps Solution",
+
+    content:
+      "Global Developer Provider for Cross-Border IT and Engineering Organizations.",
+    icon: solution6,
+    frame: frame,
   },
 ];
