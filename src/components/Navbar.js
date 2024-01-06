@@ -17,7 +17,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className=" w-full flex  justify-between items-center container px-[24px]  py-[26px] nav-bg ">
+    <nav className=" w-full max-w-[1280px] flex  justify-between items-center container px-[24px]  py-[26px] nav-bg ">
       <Link href={"/"}>
         <Image src={logo} alt="logo" />
       </Link>

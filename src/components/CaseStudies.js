@@ -5,16 +5,25 @@ import SimpleBtn from "./SimpleBtn";
 
 const CaseStudies = () => {
   return (
-    <div>
+    <div className=" container px-[24px]  py-[26px]">
       <p className="text-[42px] font-medium text-center">
         Our diverse case studies
       </p>
-      <div className=" container px-[24px]  py-[26px]  ">
-        <div className="case1-bg flex justify-between">
+      <div className="   ">
+        <div className=" ">
           {Case_studies1.map((item, index) => {
             return (
-              <div key={index} className="flex  items-center gap-[30px]   ">
-                <Image width={725} src={item.image} alt="image" />
+              <div
+                key={index}
+                className="flex justify-stretch  items-center mb-[50px] gap-[30px] case1-bg  "
+              >
+                <Image
+                  className="max-w-[625px] max-h-[450px]"
+                  width="auto"
+                  height="auto"
+                  src={item.image}
+                  alt="image"
+                />
                 <div>
                   {" "}
                   <p className="text-[22px] font-medium">{item.title}</p>
@@ -28,14 +37,20 @@ const CaseStudies = () => {
             );
           })}
         </div>
-        <div className="case2-bg ">
+        <div className=" ">
           {Case_studies2.map((item, index) => {
             return (
               <div
                 key={index}
-                className="flex  flex-row-reverse items-center justify-between  ml-[24px]  "
+                className="flex case2-bg flex-row-reverse items-center justify-between mb-[50px]  pl-[24px]  "
               >
-                <Image width={725} src={item.image} alt="image" />
+                <Image
+                  className="max-w-[625px] max-h-[450px]"
+                  width="auto"
+                  height="auto"
+                  src={item.image}
+                  alt="image"
+                />
                 <div>
                   {" "}
                   <p className="text-[22px] font-medium">{item.title}</p>
@@ -52,8 +67,17 @@ const CaseStudies = () => {
         <div className="case3-bg ">
           {Case_studies3.map((item, index) => {
             return (
-              <div key={index} className="flex   items-center  gap-[30px]    ">
-                <Image width={725} src={item.image} alt="image" />
+              <div
+                key={index}
+                className="flex justify-stretch   items-center  gap-[30px]    "
+              >
+                <Image
+                  className="max-w-[625px] max-h-[450px]"
+                  width="auto"
+                  height="auto"
+                  src={item.image}
+                  alt="image"
+                />
                 <div>
                   {" "}
                   <p className="text-[22px] font-medium">{item.title}</p>
@@ -67,8 +91,11 @@ const CaseStudies = () => {
             );
           })}
         </div>
+        <div className="flex justify-center items-center mt-[60px]">
+          {" "}
+          <SimpleBtn title={"View all projects"} />
+        </div>
       </div>
-      <SimpleBtn title={"View all projects"} />
     </div>
   );
 };

@@ -73,3 +73,13 @@
   border-radius: 6px;
   border: 1px solid var(--Shades-Orange-Orange08, #ffaca0);
 }
+
+.newsletter-bg {
+  border-radius: 20px;
+  background: linear-gradient(
+    -297deg,
+    #f8523b 1.13%,
+    #dc7f72 42.2%,
+    #fff1db 72.81%
+  );
+}
