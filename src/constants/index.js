@@ -13,6 +13,12 @@ import solution4 from "@/assets/solution4.svg";
 import solution5 from "@/assets/solution5.svg";
 import solution6 from "@/assets/solution6.svg";
 import frame from "@/assets/frame.svg";
+import case1 from "@/assets/case1.svg";
+import case2 from "@/assets/case2.svg";
+import case3 from "@/assets/case3.svg";
+import case_icon1 from "@/assets/case-icon1.svg";
+import case_icon2 from "@/assets/case-icon2.svg";
+import case_icon3 from "@/assets/case-icon3.svg";
 
 export const navLinks = [
   {
@@ -95,6 +101,9 @@ export const solutions = [
       "High-performing websites that engage and impress with our custom design.",
     icon: solution1,
     frame: frame,
+    list1: "eCommerce Sites",
+    list2: "SME Platforms",
+    list3: "CMS Sites",
   },
   {
     title: "Offshore Team",
@@ -103,6 +112,9 @@ export const solutions = [
       " Global Developer Provider for Cross-Border IT and Engineering Organizations.",
     icon: solution2,
     frame: frame,
+    list1: "Dedicated software development teams",
+    list2: "Software development outsourcing",
+    list3: "Software development outsourcing",
   },
   {
     title: "Mobile App Development",
@@ -111,6 +123,9 @@ export const solutions = [
       "Top-tier mobile application development to turn your ideas into reality.",
     icon: solution3,
     frame: frame,
+    list1: "UI/UX Designs",
+    list2: "Flutter Development",
+    list3: "iOS & Andriod Development",
   },
   {
     title: "UI/UX Design",
@@ -118,6 +133,9 @@ export const solutions = [
     content: "Delight end users with intuitive and engaging user interfaces.",
     icon: solution4,
     frame: frame,
+    list1: "User Research and Analysis",
+    list2: "UI and Interaction Design",
+    list3: "Wireframing and Interactive Prototyping",
   },
   {
     title: "QA & Testing",
@@ -126,6 +144,9 @@ export const solutions = [
       "Make your technology bulletproof, with manual and automated testing.",
     icon: solution5,
     frame: frame,
+    list1: "Manual Testing",
+    list2: "Automation Testing",
+    list3: "API Testing",
   },
   {
     title: "DevOps Solution",
@@ -134,5 +155,44 @@ export const solutions = [
       "Global Developer Provider for Cross-Border IT and Engineering Organizations.",
     icon: solution6,
     frame: frame,
+    list1: "Dedicated software development teams",
+    list2: "Software development outsourcing",
+    list3: "Software development outsourcing",
+  },
+];
+
+export const Case_studies1 = [
+  {
+    image: case1,
+    title: "Soiltip . BNPL eCommerce in Golf",
+    subtitle: "Website • UI/UX & Development",
+
+    content:
+      "The platform and its digital field analytics combine our deep knowledge of precision farming and crop production achieved through years of field trials with satellite imagery, machine learning, and millions of hectares of proprietary ground truth data.",
+    icon: case_icon1,
+  },
+];
+
+export const Case_studies2 = [
+  {
+    image: case2,
+    title: "Kiddo . Money managements app",
+    subtitle: "Mobile App • UI/UX & Development",
+
+    content:
+      "The platform and its digital field analytics combine our deep knowledge of precision farming and crop production achieved through years of field trials with satellite imagery, machine learning, and millions of hectares of proprietary ground truth data.",
+    icon: case_icon2,
+  },
+];
+
+export const Case_studies3 = [
+  {
+    image: case3,
+    title: "Gewida . quran academy",
+    subtitle: "Website • UI/UX & Development",
+
+    content:
+      "The platform and its digital field analytics combine our deep knowledge of precision farming and crop production achieved through years of field trials with satellite imagery, machine learning, and millions of hectares of proprietary ground truth data.",
+    icon: case_icon3,
   },
 ];
