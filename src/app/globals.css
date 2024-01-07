@@ -6,14 +6,6 @@
   border-radius: 6px;
   background: var(--Neutral-Neutral-900, #03141a);
 }
-.nav-bg {
-  background: linear-gradient(
-    302deg,
-    #f8523b 0.82%,
-    #fbafa4 40.77%,
-    #fff1db 69.99%
-  );
-}
 
 .hero-bg {
   border-radius: 20px;
@@ -87,4 +79,16 @@
 .footer-bg {
   border-radius: 300px 300px 0px 0px;
   background: var(--Neutral-Neutral-900, #03141a);
+}
+
+@media (min-width: 1060px) {
+  .nav-bg {
+    border-radius: 20px;
+    background: linear-gradient(
+      302deg,
+      #f8523b 0.82%,
+      #fbafa4 40.77%,
+      #fff1db 69.99%
+    );
+  }
 }

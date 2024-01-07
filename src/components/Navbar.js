@@ -6,7 +6,7 @@ import close from "../assets/close.svg";
 import drop_down from "../assets/drop-down.svg";
 import menu from "../assets/menu.svg";
 import logo from "../assets/logo.svg";
-import { navLinks } from "../constants";
+import { navLinks, socialMedia } from "../constants";
 import Link from "next/link";
 import Button from "./Button";
 import Services from "@/components/Services";
@@ -17,11 +17,11 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="container">
+    <nav className="container">
       {" "}
-      <div className="max-w-[1440px] mx-[80px] mt-[30px]  ">
+      <div className="max-w-[1440px] mx-[80px] mt-[30px] ">
         {" "}
-        <nav className=" w-full  flex  justify-between items-center px-[24px]  py-[26px] nav-bg ">
+        <div className=" w-full  flex  justify-between items-center px-[24px]  py-[26px] bg-[#FFF3F1]   nav-bg ">
           <Link href={"/"}>
             <Image src={logo} alt="logo" />
           </Link>
@@ -71,118 +71,160 @@ const Navbar = () => {
 
           <div
             className="md:hidden flex justify-between items-center 
-    bg-[linear-gradient(96deg,#e8fcf8,linen)]  "
+      "
           >
             <Image
               src={toggle ? close : menu}
               alt="menu"
-              className="w-[15px] h-[15px] object-contain bg-[#4285F4]"
+              className="w-[15px] h-[15px] "
               onClick={() => setToggle(!toggle)}
             />
 
             <div
               className={`${
                 toggle
-                  ? "fixed z-40 left-0 top-0 w-full h-screen origin-top bg-[linear-gradient(96deg,#e8fcf8,linen)] text-black p-10"
+                  ? "fixed z-20 left-0 top-0 w-screen  h-screen  bg-[#FFF] text-black "
                   : "hidden"
               }`}
             >
-              <div className="flex h-full flex-col">
-                <div className="flex justify-between">
-                  <Image src={logo} alt="logo" className="w-[124px] h-[32px]" />
+              <div className="flex h-screen  flex-col">
+                <div className="flex justify-between bg-[#FFF] px-[16px] py-[12px]">
+                  <Image src={logo} alt="logo" />
                   <p className="cursor-pointer text-md text-black">
                     <Image
                       src={toggle ? close : menu}
                       alt="menu"
-                      className="w-[15px] h-[15px] object-contain bg-[#4285F4]"
                       onClick={() => setToggle(!toggle)}
                     />
                   </p>
                 </div>
-                <ul className=" leading-[50px] text  m_title lowercase font-semibold">
-                  {navLinks.map((nav, index) => (
-                    <li
-                      key={nav.id}
-                      className={`  font-semibold cursor-pointer text-[16px] leading-[50px] text  m_title lowercase ${
-                        active === nav.title ? "text-[#4285F4]" : "text-black"
-                      } ${
-                        index === navLinks.length - 1 ? "mr-0" : "mr-[16px]"
-                      }`}
-                      onClick={() => setActive(nav.title)}
-                    >
-                      {nav.title ? (
-                        <Link onClick={() => setToggle(!toggle)} href={nav.id}>
-                          {nav.title}
-                        </Link>
-                      ) : (
-                        <div className="flex  flex-col ">
-                          <div className=" flex items-center gap-2  ">
-                            <div>
-                              {" "}
-                              <Link href={"services"}> SERVICES</Link>
-                            </div>
-                            <div onClick={() => setOpen(!open)}>
-                              <Image src={drop_down} alt="drop_down" />
-                            </div>
-                          </div>
-
-                          <ul
-                            className={`    h-fit capitalize     ${
-                              open ? " flex text-black" : "hidden"
-                            } `}
+                <div className="bg-[#FFF3F1] px-[16px] py-[12px]">
+                  {" "}
+                  <ul className="  mt-[40px]    font-semibold">
+                    {navLinks.map((nav, index) => (
+                      <li
+                        key={nav.id}
+                        className={`  font-semibold cursor-pointer ${
+                          active === nav.title ? "text-[#E5361D]" : "text-black"
+                        } ${
+                          index === navLinks.length - 1 ? "mb-0" : "mb-[20px]"
+                        }`}
+                        onClick={() => setActive(nav.title)}
+                      >
+                        {nav.title ? (
+                          <Link
+                            onClick={() => setToggle(!toggle)}
+                            href={nav.id}
                           >
-                            <li
-                              className={`flex font-medium  text-[16px] leading-[20.6px]    px-[8px] py-[16px]   flex-col  `}
+                            {nav.title}
+                          </Link>
+                        ) : (
+                          <div className=" bg-[#FFF3F1]  ">
+                            <div className=" flex justify-between  ">
+                              <div>
+                                {" "}
+                                <Link href={"services"}> Services</Link>
+                              </div>
+                              <div onClick={() => setOpen(!open)}>
+                                <Image
+                                  className={` ${open && "rotate-180"}`}
+                                  src={drop_down}
+                                  alt="drop_down"
+                                />
+                              </div>
+                            </div>
+
+                            <ul
+                              className={`         ${
+                                open ? " flex text-black" : "hidden"
+                              } `}
                             >
-                              <Link
-                                className="hover:bg-blue-600 hover:text-white mb-2"
-                                href={"home"}
+                              <li
+                                className={`flex font-medium  text-[16px] leading-[20.6px]    px-[8px] py-[16px]   flex-col  `}
                               >
-                                -Offshore Team
-                              </Link>
-                              <Link
-                                className="hover:bg-blue-600 hover:text-white mb-2 "
-                                href={"home"}
-                              >
-                                -Software Development
-                              </Link>
-                              <Link
-                                className="hover:bg-blue-600 hover:text-white mb-2 "
-                                href={"home"}
-                              >
-                                -Design & Development
-                              </Link>
-                              <Link
-                                className="hover:bg-blue-600 hover:text-white mb-2"
-                                href={"home"}
-                              >
-                                -Mobile Application
-                              </Link>
-                              <Link
-                                className="hover:bg-blue-600 hover:text-white mb-2 "
-                                href={"home"}
-                              >
-                                -DevOps
-                              </Link>
-                              <Link
-                                className="hover:bg-blue-600 hover:text-white "
-                                href={"home"}
-                              >
-                                -Digital Marketing
-                              </Link>
-                            </li>
-                          </ul>
+                                <Link
+                                  className=" hover:text-[#E5361D] mb-2"
+                                  href={"home"}
+                                >
+                                  Hire Offshore Team
+                                </Link>
+                                <Link
+                                  className=" hover:text-[#E5361D] mb-2 "
+                                  href={"home"}
+                                >
+                                  UI/UX Design
+                                </Link>
+                                <Link
+                                  className=" hover:text-[#E5361D] mb-2 "
+                                  href={"home"}
+                                >
+                                  Mobile App
+                                </Link>
+                                <Link
+                                  className=" hover:text-[#E5361D] mb-2"
+                                  href={"home"}
+                                >
+                                  MVP Build
+                                </Link>
+                                <Link
+                                  className=" hover:text-[#E5361D] mb-2 "
+                                  href={"home"}
+                                >
+                                  Web Development
+                                </Link>
+                                <Link
+                                  className=" hover:text-[#E5361D] "
+                                  href={"home"}
+                                >
+                                  Digital Marketing
+                                </Link>
+                                <Link
+                                  className=" hover:text-[#E5361D] "
+                                  href={"home"}
+                                >
+                                  Shopify Development
+                                </Link>
+                                <Link
+                                  className=" hover:text-[#E5361D] "
+                                  href={"home"}
+                                >
+                                  Webflow Development
+                                </Link>
+                                <Link
+                                  className=" hover:text-[#E5361D] "
+                                  href={"home"}
+                                >
+                                  Design System Service
+                                </Link>
+                              </li>
+                            </ul>
+                          </div>
+                        )}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="mt-[40px]">
+                  <div className="w-[328px]">
+                    {" "}
+                    <Button />
+                  </div>
+                  <div className="flex mt-[50px]">
+                    {socialMedia.map((item, index) => {
+                      return (
+                        <div className="mb-[40px] mr-[10px]" key={index}>
+                          <Image src={item.icon} alt="icon" />
                         </div>
-                      )}
-                    </li>
-                  ))}
-                </ul>
+                      );
+                    })}
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </nav>
+        </div>
       </div>
-    </div>
+    </nav>
   );
 };
 
