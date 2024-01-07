@@ -83,3 +83,8 @@
     #fff1db 72.81%
   );
 }
+
+.footer-bg {
+  border-radius: 300px 300px 0px 0px;
+  background: var(--Neutral-Neutral-900, #03141a);
+}

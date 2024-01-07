@@ -6,17 +6,22 @@ import Image from "next/image";
 
 const Newsletter = () => {
   return (
-    <div className="newsletter-bg container max-w-[1280px] flex justify-between items-center px-[24px] py-[20px] ">
-      <div>
+    <div className="container relative z-10">
+      <div className="max-w-[1440px] mx-[80px] ">
         {" "}
-        <p className="text-[#FFF] max-w-[544px] mb-[40px] text-[32px] font-medium leading-relaxed ">
-          Want to accelerate software development at your company? See how we
-          can help.
-        </p>
-        <Button />
+        <div className="newsletter-bg    container  flex justify-between items-center px-[24px] py-[20px] ">
+          <div>
+            {" "}
+            <p className="text-[#FFF] max-w-[544px] mb-[40px] text-[32px] font-medium leading-relaxed ">
+              Want to accelerate software development at your company? See how
+              we can help.
+            </p>
+            <Button />
+          </div>
+          <Image src={star} alt="str" />
+          <Image src={img} alt="img" />
+        </div>
       </div>
-      <Image src={star} alt="str" />
-      <Image src={img} alt="img" />
     </div>
   );
 };

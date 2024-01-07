@@ -19,6 +19,10 @@ import case3 from "@/assets/case3.svg";
 import case_icon1 from "@/assets/case-icon1.svg";
 import case_icon2 from "@/assets/case-icon2.svg";
 import case_icon3 from "@/assets/case-icon3.svg";
+import facebook from "@/assets/facebook.svg";
+import twitter from "@/assets/twitter.svg";
+import linkedin from "@/assets/linkedin.svg";
+import instagram from "@/assets/instagram.svg";
 
 export const navLinks = [
   {
@@ -194,5 +198,104 @@ export const Case_studies3 = [
     content:
       "The platform and its digital field analytics combine our deep knowledge of precision farming and crop production achieved through years of field trials with satellite imagery, machine learning, and millions of hectares of proprietary ground truth data.",
     icon: case_icon3,
+  },
+];
+
+export const footerLinks = [
+  {
+    title: "Company",
+    links: [
+      {
+        name: "Home",
+        link: "https://www.fb.com/content/",
+      },
+      {
+        name: "Projects",
+        link: "https://www.fb.com/how-it-works/",
+      },
+      {
+        name: "Services",
+        link: "https://www.fb.com/create/",
+      },
+      {
+        name: "About",
+        link: "https://www.fb.com/explore/",
+      },
+      {
+        name: "Blog",
+        link: "https://www.fb.com/terms-and-services/",
+      },
+      {
+        name: "Careers",
+        link: "https://www.fb.com/explore/",
+      },
+      {
+        name: "Contact us",
+        link: "https://www.fb.com/terms-and-services/",
+      },
+    ],
+  },
+  {
+    title: "Services",
+    links: [
+      {
+        name: "Hire Offshore Team",
+        link: "https://www.fb.com/help-center/",
+      },
+      {
+        name: "UI/UX Design",
+        link: "https://www.fb.com/partners/",
+      },
+      {
+        name: "Mobile App",
+        link: "https://www.fb.com/suggestions/",
+      },
+      {
+        name: "MVP Build",
+        link: "https://www.fb.com/blog/",
+      },
+      {
+        name: "Web Development",
+        link: "https://www.fb.com/newsletters/",
+      },
+      {
+        name: "Digital Marketing",
+        link: "https://www.fb.com/newsletters/",
+      },
+      {
+        name: "Shopify Development ",
+        link: "https://www.fb.com/blog/",
+      },
+      {
+        name: "Webflow Development",
+        link: "https://www.fb.com/newsletters/",
+      },
+      {
+        name: "Design System Service",
+        link: "https://www.fb.com/newsletters/",
+      },
+    ],
+  },
+];
+export const socialMedia = [
+  {
+    id: "social-media-1",
+    icon: instagram,
+    link: "https://www.instagram.com/",
+  },
+  {
+    id: "social-media-2",
+    icon: facebook,
+    link: "https://www.facebook.com/",
+  },
+  {
+    id: "social-media-3",
+    icon: twitter,
+    link: "https://www.twitter.com/",
+  },
+  {
+    id: "social-media-4",
+    icon: linkedin,
+    link: "https://www.linkedin.com/",
   },
 ];
