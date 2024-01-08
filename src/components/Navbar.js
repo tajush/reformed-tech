@@ -21,7 +21,7 @@ const Navbar = () => {
       {" "}
       <div className="max-w-[1440px] md:mx-[80px] md:mt-[30px] ">
         {" "}
-        <div className=" w-full  flex  justify-between items-center px-[24px]  py-[26px] bg-[#FFF3F1]   nav-bg ">
+        <div className=" w-full  flex  justify-between items-center xs:px-[16px] md:px-[24px] xs:py-[12px] md:py-[26px] bg-[#FFF3F1]   nav-bg ">
           <Link href={"/"}>
             <Image src={logo} alt="logo" />
           </Link>

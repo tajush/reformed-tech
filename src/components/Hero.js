@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div className="container">
       {" "}
-      <div className=" max-w-[1440px] md:mx-[80px]  flex xs:flex-col md:flex-row  xs:justify-center xs:items-center md:justify-between flex-wrap md:items-start pt-[83px] hero-bg px-[24px]  py-[26px] ">
+      <div className=" max-w-[1440px] md:mx-[80px] md:pt-[110px] xs:pt-[36px] flex xs:flex-col md:flex-row  xs:justify-center xs:items-center md:justify-between flex-wrap md:flex-nowrap md:items-start  hero-bg md:px-[24px] xs:px-[16px]  md:py-[26px] ">
         <div>
           <div>
             {" "}
