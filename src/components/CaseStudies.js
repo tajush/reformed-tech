@@ -6,7 +6,7 @@ import SimpleBtn from "./SimpleBtn";
 const CaseStudies = () => {
   return (
     <div className="container">
-      <div className="  max-w-[1440px] mx-[80px] px-[24px]  py-[26px]">
+      <div className="  max-w-[1440px] md:mx-[80px] px-[24px]  py-[26px]">
         <p className="text-[42px] font-medium text-center">
           Our diverse case studies
         </p>
@@ -16,10 +16,10 @@ const CaseStudies = () => {
               return (
                 <div
                   key={index}
-                  className="flex justify-stretch  items-center mb-[50px] gap-[30px] case1-bg  "
+                  className="flex justify-stretch  flex-wrap items-center mb-[50px] gap-[30px] case1-bg  "
                 >
                   <Image
-                    className="max-w-[625px] max-h-[450px]"
+                    className="max-w-[625px] max-h-[450px] xs:max-w-[328px] xs:max-h-[200px] "
                     width="auto"
                     height="auto"
                     src={item.image}
@@ -43,10 +43,10 @@ const CaseStudies = () => {
               return (
                 <div
                   key={index}
-                  className="flex case2-bg flex-row-reverse items-center justify-between mb-[50px]  pl-[24px]  "
+                  className="flex case2-bg flex-wrap flex-row-reverse items-center justify-between mb-[50px]  pl-[24px]  "
                 >
                   <Image
-                    className="max-w-[625px] max-h-[450px]"
+                    className="max-w-[625px] max-h-[450px] xs:max-w-[328px] xs:max-h-[200px] "
                     width="auto"
                     height="auto"
                     src={item.image}
@@ -70,10 +70,10 @@ const CaseStudies = () => {
               return (
                 <div
                   key={index}
-                  className="flex justify-stretch   items-center  gap-[30px]    "
+                  className="flex justify-stretch flex-wrap  items-center  gap-[30px]    "
                 >
                   <Image
-                    className="max-w-[625px] max-h-[450px]"
+                    className="md:max-w-[625px] xs:max-w-[328px] xs:max-h-[200px] md:max-h-[450px]"
                     width="auto"
                     height="auto"
                     src={item.image}

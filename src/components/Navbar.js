@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <nav className="container">
       {" "}
-      <div className="max-w-[1440px] mx-[80px] mt-[30px] ">
+      <div className="max-w-[1440px] md:mx-[80px] md:mt-[30px] ">
         {" "}
         <div className=" w-full  flex  justify-between items-center px-[24px]  py-[26px] bg-[#FFF3F1]   nav-bg ">
           <Link href={"/"}>
