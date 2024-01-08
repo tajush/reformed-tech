@@ -173,25 +173,25 @@ const Navbar = () => {
                                   Web Development
                                 </Link>
                                 <Link
-                                  className=" hover:text-[#E5361D] "
+                                  className=" hover:text-[#E5361D]  mb-2 "
                                   href={"home"}
                                 >
                                   Digital Marketing
                                 </Link>
                                 <Link
-                                  className=" hover:text-[#E5361D] "
+                                  className=" hover:text-[#E5361D]  mb-2 "
                                   href={"home"}
                                 >
                                   Shopify Development
                                 </Link>
                                 <Link
-                                  className=" hover:text-[#E5361D] "
+                                  className=" hover:text-[#E5361D]  mb-2 "
                                   href={"home"}
                                 >
                                   Webflow Development
                                 </Link>
                                 <Link
-                                  className=" hover:text-[#E5361D] "
+                                  className=" hover:text-[#E5361D]  mb-2 "
                                   href={"home"}
                                 >
                                   Design System Service
