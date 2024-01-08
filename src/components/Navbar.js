@@ -50,7 +50,7 @@ const Navbar = () => {
                     </div>
 
                     <div
-                      className={`absolute left-[50%] -translate-x-[50%]  top-[80px]  bg-white  rounded-lg   h-[497px]   ${
+                      className={`absolute left-[50%] -translate-x-[50%]  top-[100px]  bg-white  rounded-lg   h-[497px]   ${
                         open ? " flex text-black" : "hidden"
                       } `}
                     >
