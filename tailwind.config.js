@@ -15,7 +15,7 @@ module.exports = {
         Natural_Orange: "#E5361D",
       },
       screens: {
-        xs: "60px",
+        xs: "360px",
         ss: "620px",
         sm: "668px",
         md: "820px",
