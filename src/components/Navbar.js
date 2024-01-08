@@ -204,7 +204,7 @@ const Navbar = () => {
                     ))}
                   </ul>
                 </div>
-                <div className="mt-[40px]">
+                <div className="mt-[40px] flex flex-col justify-center items-center">
                   <div className="w-[328px]">
                     {" "}
                     <Button />
