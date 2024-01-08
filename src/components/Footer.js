@@ -81,7 +81,7 @@ const Footer = () => {
                       {link.links.map((name, index) => {
                         return (
                           <li
-                            className="text-[#CDD4D5] mb-3 flex  leading-relaxed"
+                            className="text-[#CDD4D5] mb-3 flex text-[16px]  leading-relaxed"
                             key={index}
                           >
                             {" "}
