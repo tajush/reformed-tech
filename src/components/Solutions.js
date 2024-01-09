@@ -17,7 +17,10 @@ const Solutions = () => {
         <div className=" grid xs:grid-cols-1   md:grid-cols-3 md:grid-flow-row  gap-[30px]  ">
           {solutions.map((item, index) => {
             return (
-              <div key={index} className="solution-bg px-[24px] py-[46px]  ">
+              <div
+                key={index}
+                className="solution-bg custom-bg px-[24px] py-[46px]  "
+              >
                 <Image src={item.icon} />
                 <p className="mt-[28px] font-bold text-[22px]  ">
                   {item.title}
@@ -37,7 +40,9 @@ const Solutions = () => {
                     <Image src={item.frame} /> <p>{item.list3}</p>
                   </div>
                 </div>
-                <ExploreBtn />
+                <div className="xs:block md:hidden">
+                  <ExploreBtn />
+                </div>
               </div>
             );
           })}
