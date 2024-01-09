@@ -49,12 +49,12 @@
   border: 1px solid var(--Shades-Orange-Orange08, #ffaca0);
 }
 
-.case1-bg {
+.case-bg {
   border-radius: 20px;
   border: 1px solid var(--Shades-Orange-Orange09, #ffcec7);
   background: var(--Shades-Orange-Orange11, #fff3f1);
 }
-.case2-bg {
+.case-hover-bg:hover {
   border-radius: 20px;
   background: linear-gradient(
     302deg,
@@ -63,12 +63,6 @@
     #fff1db 69.99%
   );
   box-shadow: 0px 8px 16px 0px rgba(202, 202, 202, 0.6);
-}
-
-.case3-bg {
-  border-radius: 20px;
-  border: 1px solid var(--Shades-Orange-Orange09, #ffcec7);
-  background: var(--Shades-Orange-Orange11, #fff3f1);
 }
 
 .simpleBtn-bg {
@@ -91,7 +85,7 @@
   background: var(--Neutral-Neutral-900, #03141a);
 }
 
-@media (min-width: 1060px) {
+@media (min-width: 820px) {
   .nav-bg {
     border-radius: 20px 20px 0px 0px;
     background: linear-gradient(
@@ -115,4 +109,12 @@
 
   /* Shadow hard 02 */
   box-shadow: 0px 8px 16px 0px rgba(255, 188, 183, 0.6);
+}
+
+.exploreBtn-bgMbl:hover {
+  border-radius: 6px;
+  background: var(
+    --Gradient-Brand,
+    linear-gradient(286deg, #dc513e 12.4%, #ed8173 49.04%, #e3ba7d 90.17%)
+  );
 }

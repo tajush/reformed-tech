@@ -2,6 +2,7 @@ import { Case_studies1, Case_studies2, Case_studies3 } from "@/constants";
 import Image from "next/image";
 import React from "react";
 import SimpleBtn from "./SimpleBtn";
+import ExploreBtn from "./ExploreBtn";
 
 const CaseStudies = () => {
   return (
@@ -16,7 +17,7 @@ const CaseStudies = () => {
               return (
                 <div
                   key={index}
-                  className="flex justify-stretch md:flex-nowrap flex-wrap items-center mb-[50px] md:gap-[30px] case1-bg  "
+                  className="flex justify-stretch md:flex-nowrap flex-wrap items-center mb-[50px] md:gap-[30px] case-bg case-hover-bg  "
                 >
                   <Image
                     className="max-w-[625px]  w-full "
@@ -33,6 +34,10 @@ const CaseStudies = () => {
                       {item.content}
                     </p>
                     <Image src={item.icon} alt="icon" />
+                    <div className="md:hidden flex mb-[29px]">
+                      {" "}
+                      <ExploreBtn />
+                    </div>
                   </div>
                 </div>
               );
@@ -43,7 +48,7 @@ const CaseStudies = () => {
               return (
                 <div
                   key={index}
-                  className="flex case2-bg  md:flex-nowrap flex-wrap flex-row-reverse items-center justify-between mb-[50px]  md:pl-[24px]  "
+                  className="flex  case-bg case-hover-bg  md:flex-nowrap flex-wrap flex-row-reverse items-center justify-between mb-[50px]  md:pl-[24px]  "
                 >
                   <Image
                     className="max-w-[625px] w-full "
@@ -60,12 +65,16 @@ const CaseStudies = () => {
                       {item.content}
                     </p>
                     <Image src={item.icon} alt="icon" />
+                    <div className="md:hidden flex mb-[29px]  ">
+                      {" "}
+                      <ExploreBtn />
+                    </div>
                   </div>
                 </div>
               );
             })}
           </div>
-          <div className="case3-bg ">
+          <div className=" case-bg case-hover-bg ">
             {Case_studies3.map((item, index) => {
               return (
                 <div
@@ -91,6 +100,10 @@ const CaseStudies = () => {
                       src={item.icon}
                       alt="icon"
                     />
+                    <div className="md:hidden flex mb-[29px]">
+                      {" "}
+                      <ExploreBtn />
+                    </div>
                   </div>
                 </div>
               );
