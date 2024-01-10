@@ -4,9 +4,9 @@ import React from "react";
 
 const Services = () => {
   return (
-    <div className=" px-[80px] py-[36px] card-bg ">
+    <div className=" px-[80px] py-[36px] card-bg  ">
       <div className="flex  ">
-        <div className="card-left-bg ">
+        <div className="card-left-bg pr-[52px]  ">
           {" "}
           <p className="border-b-[1px] w-fit mb-[49px] ">
             Offshore Service Approach.

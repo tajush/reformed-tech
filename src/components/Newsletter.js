@@ -3,6 +3,7 @@ import img from "../assets/newsLetterImg.svg";
 import star from "../assets/newsLtrStr.svg";
 import Button from "./Button";
 import Image from "next/image";
+import NewsLtrmblBtn from "./NewsLtrmblBtn";
 
 const Newsletter = () => {
   return (
@@ -16,7 +17,14 @@ const Newsletter = () => {
               Want to accelerate software development at your company? See how
               we can help.
             </p>
-            <Button />
+            <div className="xs:hidden md:flex">
+              {" "}
+              <Button />
+            </div>
+            <div className="xs:flex md:hidden justify-center items-center">
+              {" "}
+              <NewsLtrmblBtn />
+            </div>
           </div>
           <Image className="hidden md:flex" src={star} alt="str" />
           <Image src={img} alt="img" />
