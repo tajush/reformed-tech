@@ -17,10 +17,10 @@ const CaseStudies = () => {
               return (
                 <div
                   key={index}
-                  className="flex justify-stretch md:flex-nowrap flex-wrap items-center mb-[50px] md:gap-[30px] case-bg case-hover-bg  "
+                  className="flex md:justify-stretch md:flex-nowrap flex-wrap items-center mb-[50px] md:gap-[30px] case-bg case-hover-bg  "
                 >
                   <Image
-                    className="max-w-[625px]  w-full "
+                    className="max-w-[625px]  md:w-full w-fit  "
                     width="auto"
                     height="auto"
                     src={item.image}
