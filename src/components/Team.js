@@ -19,14 +19,14 @@ const Team = () => {
         <p className="md:text-[42px] xs:text-[24px] font-semibold text-center mb-[70px] mt-[107px]">
           Amazing teams we've already helped
         </p>
-        <div className="flex justify-evenly items-center">
+        <div className="flex flex-wrap  justify-evenly items-center">
           <Image src={img1} alt="img" />
           <Image src={img2} alt="img" />
           <Image src={img3} alt="img" />
           <Image src={img4} alt="img" />
           <Image src={img5} alt="img" />
         </div>
-        <div className=" flex justify-evenly items-center mb-[130px]">
+        <div className=" flex flex-wrap justify-evenly items-center mb-[130px]">
           <Image src={img6} alt="img" />
           <Image src={img7} alt="img" />
           <Image src={img8} alt="img" />

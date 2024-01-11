@@ -23,6 +23,12 @@ import facebook from "@/assets/facebook.svg";
 import twitter from "@/assets/twitter.svg";
 import linkedin from "@/assets/linkedin.svg";
 import instagram from "@/assets/instagram.svg";
+import tech1 from "@/assets/tech1.svg";
+import tech2 from "@/assets/tech2.svg";
+import tech3 from "@/assets/tech3.svg";
+import tech4 from "@/assets/tech4.svg";
+import tech5 from "@/assets/tech5.svg";
+import tech6 from "@/assets/tech6.svg";
 
 export const navLinks = [
   {
@@ -298,5 +304,50 @@ export const socialMedia = [
     id: "social-media-4",
     icon: linkedin,
     link: "https://www.linkedin.com/",
+  },
+];
+
+export const step = [
+  {
+    title: "Agile approach",
+
+    content:
+      "Our agile methodologies ensure your vision, translated into the final product within shorter time frames.",
+    icon: tech1,
+  },
+  {
+    title: "Transparency & communication",
+
+    content:
+      "We believe in open communication and transparency at every step of the project lifecycle.",
+    icon: tech2,
+  },
+  {
+    title: "MVP",
+
+    content:
+      "We always help to improve or start your business in the shortest possible time and budget.",
+    icon: tech3,
+  },
+  {
+    title: "Quality code",
+
+    content:
+      "With 7 years of experience in enterprise application development, we provide high-quality work for your projects.",
+    icon: tech4,
+  },
+  {
+    title: "Well-organized communication",
+
+    content:
+      "To keep the client informed about everything that happens, we build comfortable communication between departments.",
+    icon: tech5,
+  },
+  {
+    title: "More profitable than a full-time employee",
+
+    content:
+      "Working on outsourcing bases with us, you effectively cover all needs and save money.",
+    icon: tech6,
   },
 ];
