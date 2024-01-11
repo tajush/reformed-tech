@@ -22,16 +22,16 @@ import img18 from "../assets/others.svg";
 const Technologies = () => {
   return (
     <div className="container">
-      <div className="  flex flex-col bg-[#FFE5E1] justify-center items-center  max-w-[1440px] md:mx-[80px] md:px-[24px] xs:mx-[16px]  ">
-        <p className="rounded-bl-[40px] rounded-br-[40px]  pl-[168px] pr-[183px] text-[42px] font-semibold bg-[#FFF] ">
+      <div className="  flex flex-col rounded-[40px] bg-[#FFE5E1] justify-center items-center  max-w-[1440px] md:mx-[80px] xs:px-[15px] md:px-[24px] xs:mx-[16px]  ">
+        <p className="rounded-bl-[40px] rounded-br-[40px]  md:pl-[168px] md:pr-[183px] xs:px-[39px] md:text-[42px] xs:text-[24px] font-semibold bg-[#FFF] ">
           Our tech stack
         </p>
-        <div className="flex justify-between items-center  ">
+        <div className="flex  xs:flex-wrap md:flex-nowrap justify-between items-center  ">
           {" "}
           <div>
             {" "}
             <p>Web</p>
-            <div className="flex flex-wrap mr-[84px]  ">
+            <div className="flex flex-wrap md:mr-[84px]  ">
               <Image className=" mb-[37px]" src={img1} alt="img" />
               <Image className=" mb-[37px]" src={img2} alt="img" />
               <Image className=" mb-[37px]" src={img3} alt="img" />
@@ -73,9 +73,11 @@ const Technologies = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center  pb-[59.19px]">
           <Image src={img18} alt="img" />
-          <p className="text-[24px]">And Numerous Other Technologies</p>
+          <p className="text-[24px] mt-[10px] text-center ">
+            And Numerous Other <br></br> Technologies
+          </p>
         </div>
       </div>
     </div>

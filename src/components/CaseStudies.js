@@ -20,7 +20,7 @@ const CaseStudies = () => {
                   className="flex md:justify-stretch md:flex-nowrap flex-wrap items-center mb-[50px] md:gap-[30px] case-bg case-hover-bg  "
                 >
                   <Image
-                    className="max-w-[625px]  md:w-full w-fit  "
+                    className="max-w-[625px] w-full  "
                     width="auto"
                     height="auto"
                     src={item.image}
