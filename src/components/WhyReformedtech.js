@@ -6,7 +6,7 @@ import { step } from "@/constants";
 const WhyReformedtech = () => {
   return (
     <div className="container">
-      <div className=" max-w-[1440px] md:mx-[80px] mb-[118px] ">
+      <div className=" max-w-[1440px] md:mx-[80px] xs:mx-[16px] mb-[118px] ">
         <div className=" grid   md:grid-cols-2   xs:grid-cols-1  ">
           {" "}
           <div className="bg-[#FFF3F1] xs:max-sm:text-center  md:pl-[24px] xs:max-sm:px-[15px] xs:pt-[20px] xs:max-md:pb-[24px] md:pt-[50px] xs:max-md:rounded-[40px] md:rounded-tl-[40px] md:rounded-bl-[40px]">

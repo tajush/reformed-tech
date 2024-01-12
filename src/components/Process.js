@@ -58,7 +58,7 @@ import img from "../assets/step-arrow.svg";
 const Process = () => {
   return (
     <div className="container">
-      <div className="max-w-[1440px] md:mx-[80px] mb-[118px]">
+      <div className="max-w-[1440px] md:mx-[80px] xs:mx-[16px] mb-[118px]">
         <div className="text-center mb-[54px]">
           <p className="md:text-[24px] xs:text-[16px]">
             Staff augmentation process
