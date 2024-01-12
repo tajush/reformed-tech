@@ -29,6 +29,9 @@ import tech3 from "@/assets/tech3.svg";
 import tech4 from "@/assets/tech4.svg";
 import tech5 from "@/assets/tech5.svg";
 import tech6 from "@/assets/tech6.svg";
+import step1 from "@/assets/step1.svg";
+import step2 from "@/assets/step2.svg";
+import step3 from "@/assets/step3.svg";
 
 export const navLinks = [
   {
@@ -349,5 +352,29 @@ export const step = [
     content:
       "Working on outsourcing bases with us, you effectively cover all needs and save money.",
     icon: tech6,
+  },
+];
+
+export const order = [
+  {
+    title: "Join exploration call",
+
+    content:
+      "Tell us more about your business on a discovery call. We'll discuss team structure and approach, success criteria, timescale, budget, and required skill sets to see how we can help.",
+    icon: step1,
+  },
+  {
+    title: "Explore the solution and team setup",
+
+    content:
+      "In a matter of days, we will finalize your project specifications, agree on an engagement model, select and onboard your team.",
+    icon: step2,
+  },
+  {
+    title: "Get started and track performance",
+
+    content:
+      "Once we've agreed on milestones, we'll immediately get to work. We'll track progress, report updates, and continuously adapt to your needs.",
+    icon: step3,
   },
 ];

@@ -124,3 +124,9 @@
   background: var(--Neutral-White, #fff);
   box-shadow: 0px 6px 10px 0px #c84633;
 }
+
+.step-bg {
+  border-radius: 40px 0px;
+  border-right: 2px solid var(--Shades-Orange-Orange08, #ffaca0);
+  background: var(--Shades-Orange-Orange09, #ffcec7);
+}
