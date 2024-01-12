@@ -17,7 +17,7 @@ import img14 from "../assets/python.svg";
 import img15 from "../assets/firebase.svg";
 import img16 from "../assets/azure.svg";
 import img17 from "../assets/amazon.svg";
-import img18 from "../assets/others.svg";
+// import img18 from "../assets/others.svg";
 
 const Technologies = () => {
   return (
@@ -74,7 +74,7 @@ const Technologies = () => {
           </div>
         </div>
         <div className="flex flex-col items-center  pb-[59.19px]">
-          <Image src={img18} alt="img" />
+          {/* <Image src={img18} alt="img" /> */}
           <p className="text-[24px] mt-[10px] text-center ">
             And Numerous Other <br></br> Technologies
           </p>
