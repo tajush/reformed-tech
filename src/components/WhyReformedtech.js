@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../assets/techimg.svg";
+// import img from "../assets/techimg.svg";
 import Image from "next/image";
 import { step } from "@/constants";
 
@@ -32,7 +32,7 @@ const WhyReformedtech = () => {
             </div>
           </div>
           <div className="xs:hidden md:flex">
-            <Image src={img} alt="img" />
+            {/* <Image src={img} alt="img" /> */}
           </div>
         </div>
       </div>
