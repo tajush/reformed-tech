@@ -23,7 +23,7 @@ const Technologies = () => {
   return (
     <div className="container">
       <div className="  flex flex-col rounded-[40px] bg-[#FFCEC7] justify-center items-center  max-w-[1440px] md:mx-[80px] xs:px-[15px] md:px-[24px] xs:mx-[16px]  ">
-        <p className="rounded-bl-[40px] rounded-br-[40px]  md:pl-[168px] md:pr-[183px] xs:px-[39px] md:text-[42px] xs:text-[24px] font-semibold bg-[#FFF] ">
+        <p className="rounded-bl-[40px] rounded-br-[40px] mb-[73px] md:pl-[168px] md:pr-[183px] xs:px-[39px] md:text-[42px] xs:text-[24px] font-semibold bg-[#FFF] ">
           Our tech stack
         </p>
         <div className="flex  xs:flex-wrap md:flex-nowrap justify-between items-center  ">
